@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#9ed9c1" />
-  <meta name="description" content="Froggy Weather — a playful weather dashboard where a frog reacts to the sky." />
-  <title>Froggy Weather 🐸</title>
+  <meta name="theme-color" content="#f0e8d8" />
+  <meta name="description" content="Sheepy Weather — a playful weather dashboard where a sheep reacts to the sky." />
+  <title>Sheepy Weather 🐑</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,700&display=swap" rel="stylesheet">
@@ -15,23 +15,23 @@
   <div class="sky sky-a"></div><div class="sky sky-b"></div>
   <main class="app">
     <header class="topbar">
-      <a class="brand" href="#" aria-label="Froggy Weather home"><span class="brand-mark">🐸</span><span><strong>Froggy</strong><small>Weather</small></span></a>
+      <a class="brand" href="#" aria-label="Sheepy Weather home"><span class="brand-mark">🐑</span><span><strong>Sheepy</strong><small>Weather</small></span></a>
       <button id="locateBtn" class="icon-btn" type="button" title="Use my location" aria-label="Use my location">⌖</button>
     </header>
     <section class="hero">
       <div class="copy">
         <p class="eyebrow"><span class="live-dot"></span> LIVE WEATHER</p>
-        <h1>How's the sky<br><em>treating Froggy?</em></h1>
-        <p class="intro">Real weather, real-time frog moods. Find a place and watch Froggy react.</p>
+        <h1>How's the sky<br><em>treating Sheepy?</em></h1>
+        <p class="intro">Real weather, real-time sheep moods. Find a place and watch Sheepy react.</p>
         <form id="searchForm" class="search" autocomplete="off"><span>⌕</span><input id="cityInput" placeholder="Search a city…" aria-label="Search a city" /><button type="submit">Search</button></form>
         <div id="suggestions" class="suggestions" hidden></div>
       </div>
-      <div class="frog-stage" id="frogStage" aria-label="Animated frog weather scene">
+      <div class="sheep-stage" id="sheepStage" aria-label="Animated sheep weather scene">
         <div class="sun"></div><div class="moon"></div><div class="cloud cloud-one"></div><div class="cloud cloud-two"></div><div class="rain" id="rain"></div>
         <div class="tree"><div class="canopy c1"></div><div class="canopy c2"></div><div class="canopy c3"></div><div class="trunk"></div></div>
-        <div class="pond"><span></span><span></span><span></span></div>
-        <div class="frog" id="frog"><div class="eye left"><i></i></div><div class="eye right"><i></i></div><div class="face"><span class="cheek left"></span><span class="cheek right"></span></div><div class="body"></div><div class="leg l"></div><div class="leg r"></div></div>
-        <div class="lily"><span></span></div><div class="weather-bubble" id="weatherBubble">Froggy is vibing ☀️</div>
+        <div class="meadow"><span></span><span></span><span></span></div>
+        <div class="sheep" id="sheep"><div class="ear left"></div><div class="ear right"></div><div class="wool"></div><div class="head"><div class="eye left"><i></i></div><div class="eye right"><i></i></div><div class="muzzle"></div></div><div class="leg l"></div><div class="leg r"></div><div class="tail"></div></div>
+        <div class="weather-bubble" id="weatherBubble">Sheepy is enjoying the sunshine ☀️</div>
       </div>
     </section>
     <section class="dashboard">
@@ -43,8 +43,8 @@
         <article><span class="metric-icon">☔</span><p>Rain chance</p><strong id="rainChance">--%</strong><small>next hour</small></article>
       </div>
     </section>
-    <section class="forecast-section"><div class="section-head"><div><p class="eyebrow">THE NEXT FEW DAYS</p><h2>Froggy's little forecast</h2></div><button id="refreshBtn" class="text-btn">↻ Refresh</button></div><div id="forecast" class="forecast"></div></section>
-    <footer>Made for curious frogs · Weather data by Open-Meteo</footer>
+    <section class="forecast-section"><div class="section-head"><div><p class="eyebrow">THE NEXT FEW DAYS</p><h2>Sheepy's little forecast</h2></div><button id="refreshBtn" class="text-btn">↻ Refresh</button></div><div id="forecast" class="forecast"></div></section>
+    <footer>Made for curious sheep · Weather data by Open-Meteo</footer>
   </main>
   <div id="toast" class="toast" role="status"></div>
   <script src="app.js"></script>
