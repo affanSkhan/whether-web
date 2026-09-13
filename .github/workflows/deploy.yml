@@ -1,4 +1,4 @@
-name: Deploy Froggy Weather to GitHub Pages
+name: Deploy Sheepy Weather to GitHub Pages
 
 on:
   push:
